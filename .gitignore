@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DesignPatternsTraining/AbstractFactory/obj
+/DesignPatternsTraining/.vs/DesignPatternsTraining/v16
+/.vs/DesignPatternsTraining/v16
+/.vs
+/DesignPatternsTraining/AbstractFactory/bin/Debug/netcoreapp2.1
