@@ -8,3 +8,5 @@
 /.vs
 /DesignPatternsTraining/AbstractFactory/bin/Debug/netcoreapp2.1
 /DesignPatternsTraining/.vs/DesignPatternsTraining/DesignTimeBuild
+/DesignPatternsTraining/Singleton/obj
+/DesignPatternsTraining/Singleton/bin/Debug/netcoreapp2.1
