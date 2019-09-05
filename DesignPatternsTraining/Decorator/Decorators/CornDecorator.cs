@@ -9,6 +9,7 @@ namespace Decorator.Decorators
     {
         public CornDecorator(Salad salad) : base(salad)
         {
+            this.Description = $"Corn {base.Description}";
         }
 
         public override double ComputeCost()
