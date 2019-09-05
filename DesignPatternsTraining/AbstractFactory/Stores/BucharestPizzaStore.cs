@@ -1,7 +1,4 @@
 ﻿using AbstractFactory.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AbstractFactory.Stores
 {
@@ -15,8 +12,8 @@ namespace AbstractFactory.Stores
                     return new CheesePizza();
                 case "margherita":
                     return new MargheritaPizza();
-                case "peperroni":
-                    return new PeperroniPizza();
+                case "pepperoni":
+                    return new PepperoniPizza();
                 default:
                     return null;
             }

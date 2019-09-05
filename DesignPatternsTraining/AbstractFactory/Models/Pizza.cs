@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AbstractFactory.Models
 {
@@ -8,10 +6,19 @@ namespace AbstractFactory.Models
     {
         public abstract void Prepare();
 
-        public abstract void Bake();
+        public void Bake()
+        {
+            Console.WriteLine("Baking pizza...");
+        }
 
-        public abstract void Cut();
+        public void Cut()
+        {
+            Console.WriteLine("Cutting pizza...");
+        }
 
-        public abstract void Box();
+        public void Box()
+        {
+            Console.WriteLine("Boxing pizza...");
+        }
     }
 }

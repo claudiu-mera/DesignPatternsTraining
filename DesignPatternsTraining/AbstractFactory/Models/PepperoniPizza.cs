@@ -2,11 +2,11 @@
 
 namespace AbstractFactory.Models
 {
-    public class MargheritaPizza : Pizza
+    public class PepperoniPizza : Pizza
     {
         public override void Prepare()
         {
-            Console.WriteLine("Preparing the one and only Margherita pizza...");
+            Console.WriteLine("Adding a little bit of pepper to the pizza...");
         }
     }
 }

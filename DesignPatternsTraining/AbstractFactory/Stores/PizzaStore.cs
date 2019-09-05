@@ -1,7 +1,4 @@
 ﻿using AbstractFactory.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AbstractFactory.Stores
 {
@@ -12,6 +9,11 @@ namespace AbstractFactory.Stores
         public Pizza OrderPizza(string type)
         {
             var pizza = CreatePizza(type);
+
+            if (pizza == null)
+            {
+                return null;
+            }
 
             pizza.Prepare();
             pizza.Bake();
