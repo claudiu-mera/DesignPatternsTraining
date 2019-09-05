@@ -6,10 +6,10 @@
 /DesignPatternsTraining/.vs/DesignPatternsTraining/v16
 /.vs/DesignPatternsTraining/v16
 /.vs
-/DesignPatternsTraining/AbstractFactory/bin/Debug/netcoreapp2.1
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+*.user
 /DesignPatternsTraining/.vs/DesignPatternsTraining/DesignTimeBuild
-/DesignPatternsTraining/Singleton/obj
-/DesignPatternsTraining/Singleton/bin/Debug/netcoreapp2.1
-/DesignPatternsTraining/DesignPatternsTraining.sln.DotSettings.user
-/DesignPatternsTraining/Prototype/bin/Debug/netcoreapp2.2
-/DesignPatternsTraining/Prototype/obj
