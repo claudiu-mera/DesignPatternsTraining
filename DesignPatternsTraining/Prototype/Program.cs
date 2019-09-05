@@ -10,13 +10,26 @@ namespace Prototype
 
             Prototype first = new ConcretePrototype
             {
-                Name = "test name",
-                Description = "test description"
+                Id = 1,
+                Description = new PrototypeDescription
+                {
+                    Name = "test name",
+                    Details = "test details"
+                }
             };
-            Console.WriteLine(first.ToString());
+            Console.WriteLine($"First:{first}");
 
-            Prototype second = first.Clone();
-            Console.WriteLine(second.ToString());
+            Prototype second = first.ShallowCopy();
+            second.Id = 2;
+            second.Description.Details = "new details";
+            Console.WriteLine($"Second:{second}");
+            Console.WriteLine($"First:{first}");
+
+            Prototype third = first.DeepCopy();
+            third.Id = 3;
+            third.Description.Details = "very new details";
+            Console.WriteLine($"Third:{third}");
+            Console.WriteLine($"First:{first}");
 
             Console.ReadKey();
         }

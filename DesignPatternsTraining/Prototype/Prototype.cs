@@ -6,6 +6,17 @@ namespace Prototype
 {
     public abstract class Prototype
     {
-        public abstract Prototype Clone();
+        public int Id { get; set; }
+
+        public PrototypeDescription Description { get; set; }
+
+        public abstract Prototype ShallowCopy();
+
+        public abstract Prototype DeepCopy();
+
+        public override string ToString()
+        {
+            return $"Id:{Id}, Description:{this.Description}";
+        }
     }
 }

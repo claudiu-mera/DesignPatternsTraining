@@ -1,23 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Prototype
+﻿namespace Prototype
 {
     public class ConcretePrototype : Prototype
     {
-        public string Name { get; set; }
-
-        public string Description { get; set; }
-
-        public override Prototype Clone()
+        public override Prototype ShallowCopy()
         {
             return (Prototype) this.MemberwiseClone();
         }
 
-        public override string ToString()
+        public override Prototype DeepCopy()
         {
-            return $"Name:{this.Name}, Description:{this.Description}";
+            return new ConcretePrototype
+            {
+                Id = this.Id,
+                Description = new PrototypeDescription
+                {
+                    Name = this.Description.Name,
+                    Details = this.Description.Details
+                }
+            };
         }
     }
 }
