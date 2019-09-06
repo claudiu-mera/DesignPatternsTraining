@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Command.Models;
+﻿using Command.Models;
 
-namespace Command
+namespace Command.Commands
 {
     public class LightOnCommand : ICommand
     {

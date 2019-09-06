@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Command
+﻿namespace Command.Commands
 {
     public interface ICommand
     {

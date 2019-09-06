@@ -1,7 +1,7 @@
 ﻿using System;
 using Command.Models;
 
-namespace Command
+namespace Command.Commands
 {
     public class OpenDoorCommand : ICommand
     {
