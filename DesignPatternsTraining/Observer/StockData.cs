@@ -9,7 +9,9 @@ namespace Observer
     /// The subject
     /// </summary>
     public class StockData : ISubject
-    {        
+    {
+        public event PriceThresholdAlert PriceThresholdAlertEvent;
+
         public double Price
         {
             get
@@ -37,8 +39,6 @@ namespace Observer
         {
             _observers = new List<IObserver>();
         }
-
-        public event PriceThresholdAlert PriceThresholdAlertEvent;
 
         public void RegisterObserver(IObserver observer)
         {
