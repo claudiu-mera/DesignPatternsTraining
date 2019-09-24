@@ -6,6 +6,8 @@ namespace Singleton
     {
         private static readonly Lazy<LazyLoader> lazy = new Lazy<LazyLoader>(() => new LazyLoader());
 
+        private static int counter = 0;
+
         public static LazyLoader Instance
         {
             get
@@ -16,7 +18,9 @@ namespace Singleton
 
         private LazyLoader()
         {
+            counter++;
 
+            Console.WriteLine($"LazyLoader Counter value: {counter}");
         }
     }
 }

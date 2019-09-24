@@ -1,14 +1,18 @@
-﻿namespace Singleton
+﻿using System;
+
+namespace Singleton
 {
     public class Loader
     {
+        private static int counter = 0;
+
         private static Loader _instance;
 
         public static Loader Instance
         {
             get
             {
-                if(_instance == null)
+                if (_instance == null)
                 {
                     _instance = new Loader();
                 }
@@ -18,6 +22,8 @@
         }
         private Loader()
         {
+            counter++;
+            Console.WriteLine($"Loader Counter value: {counter}");
         }
     }
 }
