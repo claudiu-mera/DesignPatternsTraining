@@ -22,13 +22,17 @@ namespace Prototype
             Prototype second = first.ShallowCopy();
             second.Id = 2;
             second.Description.Details = "new details";
+            Console.ReadKey();
             Console.WriteLine($"Second:{second}");
+            Console.ReadKey();
             Console.WriteLine($"First:{first}");
 
             Prototype third = first.DeepCopy();
             third.Id = 3;
             third.Description.Details = "very new details";
+            Console.ReadKey();
             Console.WriteLine($"Third:{third}");
+            Console.ReadKey();
             Console.WriteLine($"First:{first}");
 
             Console.ReadKey();

@@ -8,8 +8,8 @@ namespace Singleton
         static void Main(string[] args)
         {
             Parallel.Invoke(
-                () => PrintDetails(),
-                () => PrintDetails());
+                PrintDetails,
+                PrintDetails);
 
             Loader firstInstance = Loader.Instance;
             Loader secondInstance = Loader.Instance;
