@@ -13,11 +13,11 @@ namespace Decorator
             Salad mySalad = new CaesarSalad();
             Console.WriteLine($"Initial cost: {mySalad.ComputeCost()}");
 
-            IngredientDecorator firstIngredient = new CornDecorator(mySalad);
-            Console.WriteLine($"Cost after adding corn: {firstIngredient.ComputeCost()}");
+            IngredientDecorator saladWithFirstIngredient = new CornDecorator(mySalad);
+            Console.WriteLine($"Cost after adding corn: {saladWithFirstIngredient.ComputeCost()}");
 
-            IngredientDecorator secondIngredient = new SauceDecorator(firstIngredient);
-            Console.WriteLine($"Cost after adding sauce: {secondIngredient.ComputeCost()}");
+            IngredientDecorator saladWithSecondIngredient = new SauceDecorator(saladWithFirstIngredient);
+            Console.WriteLine($"Cost after adding sauce: {saladWithSecondIngredient.ComputeCost()}");
 
             Console.ReadKey();
         }
