@@ -4,8 +4,6 @@ namespace AbstractFactory.Stores
 {
     public abstract class PizzaStore
     {
-        private BucharestPizzaStore pizzaFactory;
-
         public Pizza OrderPizza(string type)
         {
             var pizza = CreatePizza(type);
