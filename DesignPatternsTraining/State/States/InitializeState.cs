@@ -15,7 +15,7 @@ namespace State.States
         {
             Console.WriteLine("Initializing message");
 
-            _message.State = _message.LoadedState;
+            _message.State = _message.LoadState;
         }
 
         public void LoadMessage()

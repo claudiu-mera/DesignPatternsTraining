@@ -25,7 +25,7 @@ namespace State.States
         {            
             Console.WriteLine("Processing message");
 
-            _message.State = _message.PublishedState;
+            _message.State = _message.PublishState;
         }
 
         public void PublishMessage()
@@ -35,7 +35,7 @@ namespace State.States
 
         public void ResetMessage()
         {
-            _message.State = _message.InitializedState;
+            _message.State = _message.InitializeState;
 
             Console.WriteLine("Message state reverted to: Initialized");
         }

@@ -6,22 +6,22 @@ namespace State
     {
         public IState State { get; set; }
 
-        public IState InitializedState { get; set; }
+        public IState InitializeState { get; set; }
 
-        public IState LoadedState { get; set; }
+        public IState LoadState { get; set; }
 
-        public IState ProcessedState { get; set; }
+        public IState ProcessState { get; set; }
 
-        public IState PublishedState { get; set; }
+        public IState PublishState { get; set; }
 
         public Message()
         {
-            InitializedState = new InitializeState(this);
-            LoadedState = new LoadState(this);
-            ProcessedState = new ProcessState(this);
-            PublishedState = new PublishState(this);
+            InitializeState = new InitializeState(this);
+            LoadState = new LoadState(this);
+            ProcessState = new ProcessState(this);
+            PublishState = new PublishState(this);
 
-            State = InitializedState;
+            State = InitializeState;
         }
 
         public void Init()

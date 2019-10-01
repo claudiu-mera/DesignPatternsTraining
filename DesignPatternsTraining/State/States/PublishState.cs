@@ -33,7 +33,7 @@ namespace State.States
 
         public void ResetMessage()
         {
-            _message.State = _message.InitializedState;
+            _message.State = _message.InitializeState;
 
             Console.WriteLine("Message state reverted to: Initialized");
         }

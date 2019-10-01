@@ -20,7 +20,7 @@ namespace State.States
         {           
             Console.WriteLine("Loading message");
 
-            _message.State = _message.ProcessedState;
+            _message.State = _message.ProcessState;
         }
 
         public void ProcessMessage()
@@ -35,7 +35,7 @@ namespace State.States
 
         public void ResetMessage()
         {
-            _message.State = _message.InitializedState;
+            _message.State = _message.InitializeState;
 
             Console.WriteLine("Message state reverted to: Initialized");
         }
